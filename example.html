@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body >
+
+
+
+<header class="jumbotron">
+    <h1>Garden truck</h1>
+	<button class="button">Home</button>
+	<button class="button">login</button>
+	<button class="button">sign up</button>
+	<button class="button">cart</button>
+
+	</header>
+
+	<section class="section one">
+		  
+<div id="container_slider">
+
+  <input type="radio" id="i1" name="images" checked/>
+  <input type="radio" id="i2" name="images" />
+  <input type="radio" id="i3" name="images" />
+  <input type="radio" id="i4" name="images" />
+
+  <div class="slide_img" id="one">
+    <img src="C:\Users\DELL\Desktop\GARGEN TRUCK\img3.jpg">
+</div>
+
+  <div class="slide_img" id="two">
+  <img src="C:\Users\DELL\Desktop\GARGEN TRUCK\img2.jpg">
+  </div>
+
+  <div class="slide_img" id="three">
+    <img src="C:\Users\DELL\Desktop\GARGEN TRUCK\potato.jpg">
+  </div>
+
+  <div class="slide_img" id="four">
+    <img src="C:\Users\DELL\Desktop\GARGEN TRUCK\f.jpg">
+</div>
+    
+
+
+		  <h2>Garden truck</h2>
+	</section>
+	<section class="section two">
+  			<h2>Two</h2>
+	</section>
+	<section class="section three">
+		  <h2>veggie...</h2>
+	</section>
+	<footer class="footer">
+		  <h2>contact us</h2>
+	</footer>
+
+
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  	$(document).on("scroll", function () {
+	if ($(document).scrollTop() > 100) {
+		$("header").addClass("small");
+	} else {
+		$("header").removeClass("small");
+	}
+});
+  	$(document).on("scroll", function () {
+	if ($(document).scrollTop() > 100) {
+		$("button").addClass("smallb");
+	} else {
+		$("button").removeClass("smallb");
+	}
+});
+  </script>
+
+
+ 
+<script type="text/javascript">
+	// automatic slider
+onload  = start;
+
+function start(){	
+var i = 1;
+function Move(){ 	
+	i = (i%4)+1; // 4 is the Number of image in slider
+	document.getElementById('i'+i).checked = true;
+}
+setInterval(Move,2000);}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
