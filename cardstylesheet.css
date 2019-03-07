@@ -1,0 +1,18 @@
+#veg{
+    width: 90%;
+    margin-top:15%;
+    margin-left:5%;
+}
+
+#more
+{
+
+    margin-top: 2%;
+    margin-left: 45%;
+    width: 10%;   text-align: center;
+    
+}
+
+.otherrows{
+    display: none;
+}
