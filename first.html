@@ -53,10 +53,10 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/login') }}">Login</a>
+                    <a class="nav-link" data-toggle="modal" data-target="#myModal">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/register') }}">Register</a>
+                    <a class="nav-link"data-toggle="modal" data-target="#myModal1">Register</a>
                 </li>
             </ul>
         </div>
@@ -212,6 +212,91 @@
     </div>
             
     <button type="button" class="btn btn-primary" id="more">more</button>
+            
+    <!-- modal login pop up-->
+            
+              <!-- The Modal -->
+  <div class="modal fade" id="myModal" >
+    <div class="modal-dialog modal-lg" id="modallg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="signup">
+  <h2 class="signup-header">signup</h2>
+
+  <form class="signup-container" style="margin-left:20%;">
+
+    <p><input class ="name" placeholder="name"></p>
+    
+    <p><input class ="email" placeholder="Email"></p>
+    <input class="password" placeholder="Password"><br>
+    <button class="signup_button">signup</button> 
+     </form>
+</div>
+
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button><br><br>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+            
+        <!-- end modal-->
+            
+            
+            <!-- modal signup pop up-->
+            
+<div class="modal fade" id="myModal1" >
+    <div class="modal-dialog modal-lg" id="modallg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="signup">
+  <h2 class="signup-header">signup</h2>
+
+  <form class="signup-container" style="margin-left:20%;">
+
+    <p><input class ="name" placeholder="name"></p>
+    
+    <p><input class ="email" placeholder="Email"></p>
+    <input class="password" placeholder="Password"><br>
+    <button class="signup_button">signup</button> 
+     </form>
+</div>
+
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button><br><br>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+            <!-- end modal-->
+            
+  
+</div>
     
 <script
   src="https://code.jquery.com/jquery-3.3.1.js"

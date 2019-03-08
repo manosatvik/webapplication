@@ -16,3 +16,12 @@
 .otherrows{
     display: none;
 }
+
+
+#popUpWindow{
+  //background: lightblue; 
+}
+
+#modallg{
+    width:32%;
+}
